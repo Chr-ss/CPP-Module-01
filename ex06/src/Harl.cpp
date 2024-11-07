@@ -6,7 +6,7 @@
 /*   By: crasche <crasche@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/11/07 16:36:50 by crasche       #+#    #+#                 */
-/*   Updated: 2024/11/07 16:36:52 by crasche       ########   odam.nl         */
+/*   Updated: 2024/11/07 23:59:35 by crasche       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,10 +58,13 @@ void Harl::complain(std::string level)
 	{
 		case 0:
 			(this->*actions[0])();
+			[[fallthrough]];
 		case 1:
 			(this->*actions[1])();
+			[[fallthrough]];
 		case 2:
 			(this->*actions[2])();
+			[[fallthrough]];
 		case 3:
 			(this->*actions[3])();
 			break ;
