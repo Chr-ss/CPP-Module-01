@@ -1,4 +1,4 @@
-NAME		=	zombie
+NAME		=	harl
 RM			=	rm -rf
 CPP			=	c++
 CPPFLAGS	=	-Wall -Wextra -Werror -std=c++11
