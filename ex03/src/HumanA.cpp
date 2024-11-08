@@ -6,7 +6,7 @@
 /*   By: crasche <crasche@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/11/07 16:36:50 by crasche       #+#    #+#                 */
-/*   Updated: 2024/11/07 16:36:52 by crasche       ########   odam.nl         */
+/*   Updated: 2024/11/08 12:11:02 by crasche       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ HumanA::~HumanA(void)
 	std::cout << RED << "HumanA \"" << _name << "\" faded away!" << RESET << std::endl;
 }
 
-void HumanA::setWeapon(Weapon &weapon)
+void HumanA::setWeapon(const Weapon &weapon)
 {
 	_weapon = weapon;
 }

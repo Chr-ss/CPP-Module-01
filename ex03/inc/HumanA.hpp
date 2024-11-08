@@ -6,7 +6,7 @@
 /*   By: crasche <crasche@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/11/07 16:36:52 by crasche       #+#    #+#                 */
-/*   Updated: 2024/11/07 16:38:47 by crasche       ########   odam.nl         */
+/*   Updated: 2024/11/08 12:11:05 by crasche       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ public:
 	HumanA(std::string name, Weapon &weapon);
 	// Deconstuctor
 	~HumanA(void);
-	void setWeapon(Weapon &weapon);
+	void setWeapon(const Weapon &weapon);
 	void attack(void) const;
 };
 

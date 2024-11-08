@@ -6,7 +6,7 @@
 /*   By: crasche <crasche@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2024/11/07 16:37:06 by crasche       #+#    #+#                 */
-/*   Updated: 2024/11/07 16:37:08 by crasche       ########   odam.nl         */
+/*   Updated: 2024/11/08 12:04:17 by crasche       ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 int main()
 {
 	{
+		std::cout << GREEN << "\tTest1:" << RESET << std::endl;
 		Weapon club = Weapon("crude spiked club");
 		HumanA bob("Bob", club);
 		bob.attack();
@@ -23,6 +24,7 @@ int main()
 		bob.attack();
 	}
 	{
+		std::cout << GREEN << "\n\tTest2:" << RESET << std::endl;
 		Weapon club = Weapon("crude spiked club");
 		HumanB jim("Jim");
 		jim.setWeapon(club);
@@ -31,6 +33,7 @@ int main()
 		jim.attack();
 	}
 	{
+		std::cout << GREEN << "\n\tTest3:" << RESET << std::endl;
 		Weapon sword = Weapon("Longsword");
 		HumanB mike("Mike");
 		mike.attack();
